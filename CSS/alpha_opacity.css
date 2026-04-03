@@ -1,0 +1,18 @@
+div{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(255, 0, 0,0.5);
+    transition-duration: 1s;
+    transition-delay: 1s;
+
+    
+
+}
+#Opecity{
+    background-color: yellowgreen;
+    opacity: 0;
+}
+div:hover{
+    background-color: green;
+    border-radius: 50%;
+}
