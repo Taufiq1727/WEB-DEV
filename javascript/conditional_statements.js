@@ -29,4 +29,20 @@ else{
     console.log("Invalid age");
 }
 
+//nested if-else...
+marks = 99 
+if (marks >= 30){
+    if (marks >= 80){
+        console.log("grade : O");
+    }
+    else{
+        console.log("Grade : A");
+    }
+}
+else{
+    console.log("Better luck next time")
+}
+
+
+
 
