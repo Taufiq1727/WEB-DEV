@@ -21,6 +21,12 @@ let x = 18;
 if(x >= 18){
     console.log("You can vote");
 }
-else{
-    console.log("You cannot vote");
+else if(x <18){
+    console.log("You cannot vote")
 }
+
+else{
+    console.log("Invalid age");
+}
+
+
