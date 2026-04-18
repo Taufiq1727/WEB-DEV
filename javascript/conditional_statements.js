@@ -30,7 +30,7 @@ else{
 }
 
 //nested if-else...
-marks = 99 
+marks = 99
 if (marks >= 30){
     if (marks >= 80){
         console.log("grade : O");
@@ -42,6 +42,42 @@ if (marks >= 30){
 else{
     console.log("Better luck next time")
 }
+
+
+// switch statements
+let color = "red"
+
+switch(color){
+    case "red":
+        console.log("Stop");
+        break;
+    case "yellow":
+        console.log("Slow down");
+        break;
+    case "green":
+        console.log("Gooooo.....");
+        break;
+        
+    default:
+        console.log("Broken light")
+}
+
+
+//alerts and prompts 
+
+
+console.error("This is a error")
+console.warn("This is a Warning")
+
+
+//prompts 
+let FirstName = prompt("enter your  FirstNamename")
+let LastName = prompt("enter your LastName name")
+console.log(FirstName, LastName);
+
+let msg = "Welcome " + FirstName +" "+ LastName + "!";
+alert(msg);
+
 
 
 
