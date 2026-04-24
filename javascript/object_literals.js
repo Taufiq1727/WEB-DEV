@@ -32,3 +32,53 @@ console.log(student2)
 // to delete something from the literal
 delete student2.marks;
 console.log(student2);
+
+
+// nested objects 
+const classInfo ={
+    aman:{
+        grade: "A+",
+        city:"Bangalore",
+    },
+    Taufiq:{
+        grade:"A",
+        city:"Hoskote",
+    },
+    Simran:{
+        grade:"O",
+        city:"Mumbai",
+    },
+};
+
+console.log(classInfo);
+
+
+//Array of objects
+const classInfo2 = [
+    {
+        name :"Taufiq",
+        grade:"A+",
+        city:"Bangalore",
+    },
+    {
+        name :"Simran",
+        grade:"A",
+        city:"Hoskote",
+    },
+    {
+        name :"Khushi",
+        grade:"A",
+        city:"Mumbai"
+    }
+    
+];
+
+console.log(classInfo2)
+
+
+//generating random numbers by math function
+let num = Math.random();
+num = num*10;
+num = Math.floor(num);
+num = num +1;
+console.log(num);
