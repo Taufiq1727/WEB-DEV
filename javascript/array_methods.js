@@ -42,3 +42,40 @@ let max = array.reduce((max, el) => {
 
 console.log(max);
 
+
+//default parameters
+
+function o(a,b=3){
+    return a+b;
+}
+
+
+//spread method
+
+let _arr = [1,2,3,4,];
+let newarr = [..._arr];
+console.log(newarr);
+console.log(_arr === newarr) //false
+
+
+//rest method
+
+function addition(...args){
+    for (let i = 0 ;i<args.length;i++){
+    console.log("you gave us ", args[i]);
+    }
+}
+
+function min(){
+    console.log(arguments);
+    console.log(arguments.length);
+    // arguments.push  (This throws a error)
+}
+
+//destructuring
+
+let names = ["tony","stark","Taufiq","Simran"];
+let [winner,runnerup] = names;
+console.log("winner:",winner,"runnerup:",runnerup);
+
+
