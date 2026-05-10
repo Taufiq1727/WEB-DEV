@@ -6,6 +6,9 @@ function hello() {
 function printName(){
     console.log("Taufiq");
 }
+function printSurname(){
+    console.log("Mulla")
+}
 
 function print1to5() {
     for(let i = 1 ; i <=5 ; i++){
@@ -25,6 +28,9 @@ function sum(a,b){
 hello();
 
 printName();
+
+
+printSurname();
 
 
 print1to5();
