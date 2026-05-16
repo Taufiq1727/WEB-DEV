@@ -23,7 +23,7 @@ The goal is to become industry-ready with strong fundamentals and real project e
 * MongoDB
 * Basic backend concepts (APIs, server logic)
 
----
+----
 
 ## 📅 Learning Approach
 
