@@ -58,7 +58,7 @@ document.querySelector("body").append(btns);
 
 
 let inp = document.createElement("input");
-inp.setAttribute("placeholder","enter your name");
+inp.setAttribute("placeholder","enter your name");      
 let h2 = document.createElement("h2");
 document.querySelector("body").append(inp);
 document.querySelector("body").append(h2);
