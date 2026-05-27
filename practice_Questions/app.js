@@ -71,6 +71,6 @@ inp.addEventListener("input", function () {
 
     // Show filtered value inside heading
     h2.innerText = filteredValue;
-});
+}); 
 
 
