@@ -1,0 +1,42 @@
+{
+  "cats": {
+    "name": "cats",
+    "followers": 25000,
+    "following": 5,
+    "posts": [
+      {
+        "image": "https://images.unsplash.com/photo-1",
+        "likes": 200,
+        "comments": 17
+      },
+      {
+        "image": "https://images.unsplash.com/photo-2",
+        "likes": 312,
+        "comments": 19
+      },
+      {
+        "image": "https://images.unsplash.com/photo-3",
+        "likes": 1065,
+        "comments": 200
+      }
+    ]
+  },
+
+  "dogs": {
+    "name": "dogs",
+    "followers": 75000,
+    "following": 15,
+    "posts": [
+      {
+        "image": "https://images.unsplash.com/photo-4",
+        "likes": 520,
+        "comments": 45
+      },
+      {
+        "image": "https://images.unsplash.com/photo-5",
+        "likes": 850,
+        "comments": 72
+      }
+    ]
+  }
+}
