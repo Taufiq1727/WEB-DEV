@@ -48,3 +48,5 @@ class Teacher extends School {
     this.subject = subject;
   }
 }
+
+let s1 = new Student("Taufiq",19,99);
