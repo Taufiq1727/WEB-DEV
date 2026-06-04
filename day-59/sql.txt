@@ -1,0 +1,23 @@
+# SQL Quick Notes
+
+## Database
+Collection of tables.
+
+## Table
+Collection of rows and columns.
+
+## Row
+Single record.
+
+## Column
+Attribute of a record.
+
+## SQL
+Language used to interact with relational databases.
+
+## CRUD in SQL
+
+CREATE -> INSERT
+READ   -> SELECT
+UPDATE -> UPDATE
+DELETE -> DELETE
