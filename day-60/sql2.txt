@@ -1,0 +1,92 @@
+# SQL Quick Notes
+
+## Database
+
+Collection of tables used to store related data.
+
+## Table
+
+Collection of rows and columns.
+
+## Row
+
+Single record in a table.
+
+## Column
+
+Attribute or field of a record.
+
+## SQL
+
+Structured Query Language used to interact with relational databases.
+
+## SQL vs NoSQL
+
+### SQL
+
+* Relational Database
+* Table-based
+* Structured Data
+
+### NoSQL
+
+* Non-relational Database
+* Flexible Structure
+* Document-based Data
+
+## CREATE DATABASE
+
+Used to create a new database.
+
+## USE DATABASE
+
+Selects the database to work on.
+
+## SHOW DATABASES
+
+Displays all databases.
+
+## SHOW TABLES
+
+Displays all tables inside a database.
+
+## CREATE TABLE
+
+Used to create a table with columns and data types.
+
+## Constraints
+
+### NOT NULL
+
+Value cannot be empty.
+
+### UNIQUE
+
+Duplicate values are not allowed.
+
+### PRIMARY KEY
+
+Unique identifier for each row.
+
+### FOREIGN KEY
+
+Creates a relationship between tables.
+
+## INSERT
+
+Used to add data into a table.
+
+## SELECT
+
+Used to retrieve data from a table.
+
+## Basic SQL Flow
+
+Create Database
+→ Create Table
+→ Insert Data
+→ Retrieve Data
+
+## Key Takeaway
+
+Databases store data, tables organize data, and SQL helps us create, manage, and retrieve that data efficiently.
