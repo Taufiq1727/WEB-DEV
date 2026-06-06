@@ -1,0 +1,127 @@
+# SQL Part 2 - Quick Revision Notes
+
+## WHERE Clause
+
+Used to filter records from a table.
+
+Example:
+SELECT * FROM student
+WHERE age > 18;
+
+---
+
+## Comparison Operators
+
+=   Equal To
+
+!=  Not Equal To
+
+> Greater Than
+
+<   Less Than
+
+> =  Greater Than Equal To
+
+<=  Less Than Equal To
+
+Example:
+SELECT * FROM student
+WHERE age >= 18;
+
+---
+
+## Logical Operators
+
+AND → Both conditions must be true
+
+OR → At least one condition must be true
+
+NOT → Reverse the condition
+
+Example:
+SELECT * FROM student
+WHERE age > 18 AND city = 'Bangalore';
+
+---
+
+## LIMIT Clause
+
+Used to restrict the number of rows returned.
+
+Example:
+SELECT * FROM student
+LIMIT 5;
+
+---
+
+## ORDER BY Clause
+
+Used to sort records.
+
+ASC  → Ascending Order
+
+DESC → Descending Order
+
+Example:
+SELECT * FROM student
+ORDER BY age DESC;
+
+---
+
+## Aggregate Functions
+
+COUNT() → Counts records
+
+SUM() → Returns total sum
+
+AVG() → Returns average
+
+MAX() → Returns highest value
+
+MIN() → Returns lowest value
+
+Examples:
+
+SELECT COUNT(*) FROM student;
+
+SELECT AVG(age) FROM student;
+
+SELECT MAX(age) FROM student;
+
+---
+
+## GROUP BY Clause
+
+Groups rows having the same values.
+
+Example:
+
+SELECT city, COUNT(*)
+FROM student
+GROUP BY city;
+
+---
+
+## Quick Summary
+
+WHERE     → Filter Data
+
+LIMIT     → Restrict Results
+
+ORDER BY  → Sort Results
+
+COUNT()   → Count Records
+
+AVG()     → Average Value
+
+MAX()     → Highest Value
+
+MIN()     → Lowest Value
+
+GROUP BY  → Group Similar Records
+
+---
+
+## Key Takeaway
+
+Today I learned how to filter, sort, limit, and analyze data using SQL queries. These concepts make databases powerful because they allow us to retrieve exactly the information we need.
