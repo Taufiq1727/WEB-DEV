@@ -1,0 +1,101 @@
+# SQL Part 2 - Advanced Queries Notes
+
+## HAVING Clause
+
+Used to filter grouped data.
+
+Difference:
+
+WHERE -> Filters rows before grouping
+
+HAVING -> Filters groups after grouping
+
+---
+
+## Query Execution Order
+
+FROM
+
+WHERE
+
+GROUP BY
+
+HAVING
+
+SELECT
+
+ORDER BY
+
+LIMIT
+
+---
+
+## UPDATE
+
+Used to modify existing records.
+
+Example Use Cases:
+
+* Increase salary
+* Change city
+* Update student marks
+
+---
+
+## DELETE
+
+Used to remove rows from a table.
+
+Important:
+Always use WHERE clause unless you want to delete all records.
+
+---
+
+## ALTER TABLE
+
+Used to modify table structure.
+
+Common Operations:
+
+* Add Column
+* Drop Column
+* Rename Column
+* Modify Data Type
+
+---
+
+## TRUNCATE TABLE
+
+Deletes all rows from a table.
+
+Difference:
+
+DELETE
+
+* Removes rows
+* Can use WHERE
+
+TRUNCATE
+
+* Removes all rows
+* Faster
+* Cannot use WHERE
+
+---
+
+## Practical Concepts Practiced
+
+* Creating Database
+* Creating Tables
+* Inserting Records
+* Selecting Data
+* Filtering Data
+* Updating Records
+* Adding Columns
+* Dropping Columns
+
+---
+
+## Key Takeaway
+
+Today I learned how to manage and modify existing database structures using UPDATE, ALTER, DELETE, and TRUNCATE operations. These commands are essential for maintaining real-world databases.
