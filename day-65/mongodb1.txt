@@ -1,0 +1,280 @@
+# MongoDB (Part 1) - Quick Revision Notes
+
+## What is MongoDB?
+- MongoDB is a **NoSQL (Non-Relational) Database**.
+- Data is stored in the form of **Documents** (JSON-like format).
+- MongoDB stores data in **BSON (Binary JSON)** format.
+
+---
+
+## SQL vs MongoDB
+
+| SQL                | MongoDB              |
+| ------------------ | -------------------- |
+| Database           | Database             |
+| Table              | Collection           |
+| Row                | Document             |
+| Column             | Field                |
+| Record             | Document             |
+
+---
+
+## Basic MongoDB Commands
+
+### Start Mongo Shell
+```bash
+mongosh
+```
+
+### Create / Switch Database
+```javascript
+use college
+```
+
+### Show All Collections
+```javascript
+show collections
+```
+
+### Drop Current Database
+```javascript
+db.dropDatabase()
+```
+
+---
+
+## Document & Collection
+
+- **Collection** → Similar to a table in SQL.
+- **Document** → Similar to a row/record in SQL.
+- Documents are stored as key-value pairs.
+
+Example:
+```javascript
+{
+  name: "Taufiq",
+  age: 19,
+  marks: 98
+}
+```
+
+---
+
+## Insert Operations
+
+### Insert One Document
+```javascript
+db.student.insertOne({
+    name: "Taufiq",
+    age: 19,
+    marks: 98
+})
+```
+
+### Insert Multiple Documents
+```javascript
+db.student.insertMany([
+    {name:"Simran", marks:19},
+    {name:"BOB", age:10}
+])
+```
+
+---
+
+## Find Operations
+
+### Display All Documents
+```javascript
+db.student.find()
+```
+
+### Find by Field
+```javascript
+db.student.find({marks:19})
+```
+
+### Find using Multiple Conditions
+```javascript
+db.student.find({
+    $or: [
+        {marks: {$gt: 18}},
+        {age: {$gt: 9}}
+    ]
+})
+```
+
+---
+
+## Query Operators
+
+### Greater Than (`$gt`)
+```javascript
+db.student.find({
+    marks: {$gt: 75}
+})
+```
+
+### In Operator (`$in`)
+```javascript
+db.student.find({
+    marks: {$in: [19, 98]}
+})
+```
+
+### OR Operator (`$or`)
+```javascript
+db.student.find({
+    $or: [
+        {marks: {$gt: 18}},
+        {age: {$gt: 9}}
+    ]
+})
+```
+
+---
+
+## Update Operations
+
+### Update One Document
+```javascript
+db.student.updateOne(
+    {name: "Taufiq"},
+    {$set: {marks: 99}}
+)
+```
+
+### `$set`
+- Used to add or update a field.
+
+---
+
+## Nested Documents (Nesting)
+
+A document can contain another document inside it.
+
+Example:
+```javascript
+{
+    name: "Farah",
+    performance: {
+        marks: 98,
+        grade: "A"
+    }
+}
+```
+
+### Insert Nested Document
+```javascript
+db.student.insertOne({
+    name: "Farah",
+    performance: {
+        marks: 98,
+        grade: "A"
+    }
+})
+```
+
+### Find Nested Data
+```javascript
+db.student.find({
+    "performance.marks": 98
+})
+```
+
+---
+
+## Delete Operations
+
+### Delete One Document
+```javascript
+db.student.deleteOne({
+    "performance.marks": 98
+})
+```
+
+### Delete Multiple Documents
+```javascript
+db.student.deleteMany({})
+```
+
+> `{}` means all documents in the collection.
+
+---
+
+## Common Mistakes I Learned Today
+
+❌ Wrong:
+```javascript
+db.student.find(marks:19)
+```
+
+✅ Correct:
+```javascript
+db.student.find({marks:19})
+```
+
+---
+
+❌ Wrong:
+```javascript
+db.student.find({or:[...]})
+```
+
+✅ Correct:
+```javascript
+db.student.find({
+    $or: [...]
+})
+```
+
+---
+
+❌ Wrong:
+```javascript
+db.deleteMany({})
+```
+
+✅ Correct:
+```javascript
+db.student.deleteMany({})
+```
+
+---
+
+## Frequently Used MongoDB Commands
+
+| Command | Purpose |
+|----------|----------|
+| `mongosh` | Open MongoDB Shell |
+| `use college` | Create/Switch Database |
+| `show collections` | Show all collections |
+| `db.student.insertOne()` | Insert one document |
+| `db.student.insertMany()` | Insert multiple documents |
+| `db.student.find()` | Display documents |
+| `db.student.find({condition})` | Filter documents |
+| `db.student.updateOne()` | Update a document |
+| `db.student.deleteOne()` | Delete one document |
+| `db.student.deleteMany({})` | Delete all documents |
+| `db.dropDatabase()` | Delete current database |
+
+---
+
+## Quick Summary
+
+- MongoDB is a NoSQL database.
+- Data is stored as **Documents** inside **Collections**.
+- BSON is the storage format.
+- `insertOne()` → Insert one document.
+- `insertMany()` → Insert multiple documents.
+- `find()` → Retrieve documents.
+- Query operators: `$gt`, `$in`, `$or`.
+- `updateOne()` + `$set` → Update data.
+- Nested objects can be stored and queried.
+- `deleteOne()` and `deleteMany()` remove documents.
+- `db.dropDatabase()` deletes the entire database.
+
+---
+
+## Key Takeaway 🚀
+
+Today I learned the fundamentals of MongoDB and how it differs from SQL databases. I practiced creating databases, inserting and querying documents, using query operators, updating records, working with nested objects, and deleting data. MongoDB's flexible document-based structure makes it very powerful for modern backend applications.
