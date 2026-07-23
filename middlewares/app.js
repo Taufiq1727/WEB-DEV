@@ -42,6 +42,10 @@ app.get("/random", (req, res) => {
 app.get("/error", (req, res) => {
   abcd=abcdcd;
 });
+
+app.get("/admin", (req, res) => {
+  throw new ExpressError("You are not an admin", 403);
+});
 app.use((err, req, res, next) => {
   let { status = 500, message = "Something went wrong" } = err;
   res.status(status).send(message);
@@ -49,4 +53,3 @@ app.use((err, req, res, next) => {
 app.listen(3000, () => {
   console.log("Server is running on port 3000");
 });
-     
