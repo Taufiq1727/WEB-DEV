@@ -41,7 +41,7 @@ const addCustomers = async () => {
   customer1.orders.push(order2);
 
   let result = await customer1.save();
-  console.log(result);
+  console.log(result); 
 };
 // const addOrders = async () => {
 //     let res = await Order.insertMany([
