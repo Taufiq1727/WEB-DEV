@@ -2,15 +2,10 @@
 import './App.css'
 
 import Title from './Title.jsx'
+import ProductTab from './ProductTab.jsx'
 
 function App() {
-  return (
-    <div>
-      <h1>Welcome to React</h1>
-      <p>This is a simple React application.</p>
-      <Title />
-    </div>
-  )
+  return <ProductTab />;
 }
 
 
