@@ -1,16 +1,22 @@
 import Product from "./Product.jsx";
 
-function ProductTab(){
-    let options = ["HI-TECH", "ELECTRONICS", "GADGETS"];
-    return(
-        <>
-        <Product title = "phone" price = {30000} features = {options} />
-        <Product title = "laptop" price = {20000} />
-        <Product title = "CPU" price = {10000}/>
-        
-        
-        </>
-    );
+function ProductTab() {
+    let styles = {
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "space-around",
+        alignItems: "center",
+        flexWrap: "wrap",
+        marginTop: "20px"
+    };
+  return (
+    <div style={styles}>
+      <Product title="logitech MX master" idx = {0}/>
+      <Product title ="Apple Pencil" idx = {1}/>
+      <Product title = "I Phone 18 Pro Max" idx = {2}/>
+      <Product title = "One Plus Nord 6" idx = {3}/>
+    </div>
+  );
 }
 
-export default ProductTab; 
+export default ProductTab;
